@@ -4,6 +4,8 @@ import feast.config.AppConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Scanner;
+
 public class Application {
     public static void main(String[] args) {
         ApplicationContext applicationContext =
@@ -11,5 +13,6 @@ public class Application {
         TraditionalFeast traditionalFeast =
                 applicationContext.getBean(TraditionalFeast.class);
         System.out.println(traditionalFeast.getTraditionalFeast());
+
     }
 }
